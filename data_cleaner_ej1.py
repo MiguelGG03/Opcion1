@@ -20,6 +20,16 @@ for i in range(len(lista_con_datos)):
         if j=='':
             lista_con_datos[i].remove(j)
 
+for i in range(len(lista_con_datos)):
+    for j in lista_con_datos[i]:
+        if j=='':
+            lista_con_datos[i].remove(j)
+
+for i in range(len(lista_con_datos)):
+    for j in lista_con_datos[i]:
+        if j=='':
+            lista_con_datos[i].remove(j)
+
 
 
 print(lista_con_datos)
