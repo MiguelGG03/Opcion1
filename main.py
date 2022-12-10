@@ -1,4 +1,5 @@
 from Ejercicio51.ejs_51 import (main511,main512,main513,main514,main515,main516,main517)
+from Ejercicio52.ejs_52 import (main521,main522,main523,main524,main525,main526,main527,main528,main529,main5210)
 
 def main():
     pr1=input('Que ejercicio desea ver?:\n'
