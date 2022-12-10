@@ -42,6 +42,16 @@ def main511():
         print('No es una opcion valida')
         main511()
 
+def main512():
+    print('Ejercicio 5.2')
+    print('Existe correlacion entre las siguientes variables:')
+    print('cylinders & displacement')
+    print('cylinders & horsepower')
+    print('cylinders & weight')
+    print('displacement & horsepower')
+    print('displacement & weight')
+    print('horsepower & weight')
+
 def main513():
     df = pd.read_csv('data_clear/auto-mpg.csv')
     #  Muestra la correlación entre las variables del dataset
