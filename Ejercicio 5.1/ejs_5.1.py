@@ -66,6 +66,11 @@ def main514():
     sns.lmplot(x='weight', y='horsepower', data=df, hue='cylinders', fit_reg=False)
     plt.show()
 
+def main515():
+    df = pd.read_csv('data_clear/auto-mpg.csv')
+    sns.lmplot(x='weight', y='horsepower', data=df, hue='model_year', fit_reg=False)
+    plt.show()
+
 if __name__ == '__main__':
-    main514()
+    main515()
     
