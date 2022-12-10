@@ -70,6 +70,10 @@ def main515():
     df = pd.read_csv('data_clear/auto-mpg.csv')
     sns.lmplot(x='weight', y='horsepower', data=df, hue='model_year', fit_reg=False)
     plt.show()
+    print('Sabemos que cuanto mas moderno es el coche,')
+    print('tiende a pesar menos y a tener menos potencia.')
+    print('Tambien se puede ver que con el paso de los años,')
+    print('los coches han ido reducioendo el numero de cilindros\npor normas generales (tambien puede existir algun dato que se escape\n de la normalidad).')
 
 if __name__ == '__main__':
     main515()
