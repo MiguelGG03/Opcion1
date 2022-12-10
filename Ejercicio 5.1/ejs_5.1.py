@@ -60,6 +60,12 @@ def main513():
     sns.heatmap(df.corr(), annot=True)
     plt.show()
 
+def main514():
+    df = pd.read_csv('data_clear/auto-mpg.csv')
+    # Dibuja un diagrama de dispersion que este en funcion de weight y horsepower, dependiendo del numero de displacements
+    sns.lmplot(x='weight', y='horsepower', data=df, hue='cylinders', fit_reg=False)
+    plt.show()
+
 if __name__ == '__main__':
-    main511()
+    main514()
     
