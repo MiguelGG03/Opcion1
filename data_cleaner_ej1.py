@@ -1,6 +1,6 @@
 import pandas as pd
 
-f = open("auto-mpg.data", mode='r',encoding='utf-8')
+f = open("data/auto-mpg.data", mode='r',encoding='utf-8')
 lista_con_datos = []
 
 for i in f:
