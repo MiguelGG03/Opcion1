@@ -73,7 +73,7 @@ def main515():
     print('Sabemos que cuanto mas moderno es el coche,')
     print('tiende a pesar menos y a tener menos potencia.')
     print('Tambien se puede ver que con el paso de los años,')
-    print('los coches han ido reducioendo el numero de cilindros\npor normas generales (tambien puede existir algun dato que se escape\n de la normalidad).')
+    print('los coches han ido reducioendo el numero de cilindros\npor normas generales (tambien puede existir algun dato\n que se escape de la normalidad).')
 
 if __name__ == '__main__':
     main515()
