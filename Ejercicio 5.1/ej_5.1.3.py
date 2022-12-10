@@ -6,7 +6,7 @@ def main513():
     df = pd.read_csv('data_clear/auto-mpg.csv')
     #  Muestra la correlación entre las variables del dataset
     print(df.corr())
-    #  Dibuja una gráfica que muestre la correlación entre las variables del dataset
+    #  Dibuja una gráfica que muestre la correlación entre las variables numericas del dataset
     sns.heatmap(df.corr(), annot=True)
     plt.show()
 
