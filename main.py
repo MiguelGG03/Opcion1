@@ -41,6 +41,9 @@ def main():
         '5. Apartado 5.2.5\n'
         '6. Apartado 5.2.6\n'
         '7. Apartado 5.2.7\n'
+        '8. Apartado 5.2.8\n'
+        '9. Apartado 5.2.9\n'
+        '10. Apartado 5.2.10\n'
         '>>> ')
         if pr2=='1':
             main521()
@@ -56,6 +59,12 @@ def main():
             main526()
         elif pr2=='7':
             main527()
+        elif pr2=='8':
+            main528()
+        elif pr2=='9':
+            main529()
+        elif pr2=='10':
+            main5210()
         else:
             print('No es una opcion valida')
             main()
