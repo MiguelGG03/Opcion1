@@ -76,8 +76,10 @@ def main515():
     print('los coches han ido reducioendo el numero de cilindros\npor normas generales (tambien puede existir algun dato\nque se escape de la normalidad).')
 
 def main516():
-    pass
+    df = pd.read_csv('data_clear/auto-mpg.csv')
+    sns.lmplot(x='weight', y='horsepower', data=df[df['model_year']==70], hue='model_year', fit_reg=False)
+    plt.show()
 
 if __name__ == '__main__':
-    main515()
+    main516()
     
