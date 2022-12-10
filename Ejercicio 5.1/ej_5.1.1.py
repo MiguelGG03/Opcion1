@@ -8,7 +8,7 @@ import seaborn as sns
 
 def main511():
     df = pd.read_csv('data_clear/auto-mpg.csv')
-    pr1 = input('Que grafica desea ver? (1-8):\n'
+    pr1 = input('Que grafica desea ver? (1-7):\n'
     '1. mpg vs. horsepower\n'
     '2. mpg vs. weight\n'
     '3. mpg vs. displacement\n'
@@ -16,7 +16,6 @@ def main511():
     '5. mpg vs. model_year\n'
     '6. mpg vs. origin\n'
     '7. mpg vs. cylinders\n'
-    '8. mpg vs. car_name\n'
     '>>> ')
     if pr1 == '1':
         sns.lmplot(x='horsepower', y='mpg', data=df)
@@ -38,9 +37,6 @@ def main511():
         plt.show()
     elif pr1 == '7':
         sns.lmplot(x='cylinders', y='mpg', data=df)
-        plt.show()
-    elif pr1 == '8':
-        sns.lmplot(x='car_name', y='mpg', data=df)
         plt.show()
     else:
         print('No es una opcion valida')
