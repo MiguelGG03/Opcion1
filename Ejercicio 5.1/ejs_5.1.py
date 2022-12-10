@@ -80,6 +80,13 @@ def main516():
     sns.lmplot(x='weight', y='horsepower', data=df[df['model_year']==70], hue='model_year', fit_reg=False)
     plt.show()
 
+def main517():
+    df = pd.read_csv('data_clear/auto-mpg.csv')
+    sns.lmplot(x='weight', y='horsepower', data=df[df['model_year']==80], hue='model_year', fit_reg=False)
+    plt.show()
+    print('En los años 80 los coches eran  pesados y tenian mas potencia.')
+
+
 if __name__ == '__main__':
-    main516()
+    main517()
     
