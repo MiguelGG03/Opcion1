@@ -1,4 +1,4 @@
-# Abrir el archivo auto-mpg.data leerlo y almacenarlo en la variable f
+import pandas as pd
 
 f = open("auto-mpg.data", mode='r',encoding='utf-8')
 lista_con_datos = []
@@ -19,11 +19,6 @@ for i in f:
 
     lista_con_datos.append([float(var3),int(var4),float(var5),float(var6),int(var7),float(var8),int(var9),int(var10),var11])
 
-
-for letter in lista_con_datos:
-    for i in letter:
-        if i == '':
-            letter.remove(i)
 
 
 print(lista_con_datos)
