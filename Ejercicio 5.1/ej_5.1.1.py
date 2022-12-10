@@ -7,7 +7,7 @@ import seaborn as sns
 
 #  Dibuja una gráfica que muestre la relación entre las variables del dataset
 
-def main():
+def main511():
     df = pd.read_csv('data_clear/auto-mpg.csv')
     pr1 = input('Que grafica desea ver? (1-8):\n'
     '1. mpg vs. horsepower\n'
@@ -45,8 +45,8 @@ def main():
         plt.show()
     else:
         print('No es una opcion valida')
-        main()
+        main511()
 
 if __name__ == '__main__':
-    main()
+    main511()
     
