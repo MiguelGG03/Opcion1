@@ -1,1 +1,1 @@
-from Ejercico 5.1. import *
+from Ejercicio51.ejs_51.py import *
