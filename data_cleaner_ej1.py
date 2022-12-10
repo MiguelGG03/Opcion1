@@ -19,7 +19,13 @@ for i in f:
 
     lista_con_datos.append([float(var3),int(var4),float(var5),float(var6),int(var7),float(var8),int(var9),int(var10),var11])
 
+df=pd.DataFrame(lista_con_datos,columns=['mpg','cylinders','displacement','horsepower','weight','acceleration','model_year','origin','car_name'])
 
+print(df.head(10))
 
-print(lista_con_datos)
+f.close()
+
+# Guardar el dataframe en un archivo csv
+
+df.to_csv('auto-mpg.csv',index=False)
 
