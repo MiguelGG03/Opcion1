@@ -101,7 +101,9 @@ def main527():
             'son el sexo, el dia de la semana y el tamanio del grupo, ya que el sexo\n'
             'porque los hombres suelen dejar mas propina que las mujeres, el dia de la\n'
             'semana porque los fines de semana suelen dejar mas propina que los dias\n'
-            'de diario, y el tamanio del grupo , porque cuantos mas son mas propina \nsuelen dejar')
+            'de diario, y el tamanio del grupo , porque cuantos mas son mas propina \n'
+            'suelen dejar. Los fumadores no afectan a la propina, ya que no dejan mas\n'
+            'propina que los no fumadores.')
 
 if __name__ == '__main__':
-    main527()
+    main526()
