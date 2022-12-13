@@ -1,4 +1,6 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def main521():
     tips = pd.read_csv('data_clear/tips.csv')
@@ -63,7 +65,7 @@ def main524():
     
 def main525():
     tips=pd.read_csv('data_clear/tips.csv')
-    print(tips.groupby(by='size').agg(['size','median','mean']))
+    
     
 def main526():
     pass
