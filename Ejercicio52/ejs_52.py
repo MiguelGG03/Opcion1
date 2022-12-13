@@ -135,9 +135,12 @@ def main529():
         print('Opcion incorrecta')
         main529()
 
-        
 
+def main5210():
+    pass
+    print('Yo creo que lo que el camarero debe hacer para organizar el restaurante es\n'
+            'organizar los camareros por dia de la semana, ya que los fines de semana\n')
     
 
 if __name__ == '__main__':
-    main529()
+    main526()
