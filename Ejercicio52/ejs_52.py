@@ -111,7 +111,29 @@ def main528():
     print(tips[tips['tip']>=tips['tip'].quantile(0.75)])
 
 def main529():
-    pass
+    tips=pd.read_csv('data_clear/tips.csv')
+    data=tips[tips['tip']>=tips['tip'].quantile(0.75)]
+    pr1=input('Que histograma desea ver: \n'
+                '1 - smoker \n'
+                '2 - day \n'
+                '3 - time \n'
+                '4 - size \n'
+                '>>> ')
+    if pr1=='1':
+        sns.histplot(data=data,x='smoker')
+        plt.show()
+    elif pr1=='2':
+        sns.histplot(data=data,x='day')
+        plt.show()
+    elif pr1=='3':
+        sns.histplot(data=data,x='time')
+        plt.show()
+    elif pr1=='4':
+        sns.histplot(data=data,x='size')
+        plt.show()
+    else:
+        print('Opcion incorrecta')
+        main529()
 
     
 
