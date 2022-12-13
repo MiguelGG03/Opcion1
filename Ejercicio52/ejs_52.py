@@ -58,7 +58,9 @@ def main524():
         print(tips.groupby(by='day' ,level=0).agg(['size','median','mean']))
         print(tips.groupby(by='time' ,level=0).agg(['size','median','mean']))
         print(tips.groupby(by='size' ,level=0).agg(['size','median','mean']))
-
+    else:
+        print('Opcion incorrecta')
+        main524()
     
     
 
