@@ -33,7 +33,34 @@ def main523():
     print('Media mujeres: ',(87/244)*100,'%')
 
 def main524():
-    pass
+    tips=pd.read_csv('data_clear/tips.csv')
+    pr1=input('Para que columna deseas verlo: \n'
+                '1 - sex \n'
+                '2 - smoker \n'
+                '3 - day \n'
+                '4 - time \n'
+                '5 - size \n'
+                '6 - todos ')
+    if pr1=='1':
+        print(tips.groupby(by='sex' ,level=0).agg(['size','median','mean']))
+    elif pr1=='2':
+        print(tips.groupby(by='smoker' ,level=0).agg(['size','median','mean']))
+    elif pr1=='3':
+        print(tips.groupby(by='day' ,level=0).agg(['size','median','mean']))
+    elif pr1=='4':
+        print(tips.groupby(by='time' ,level=0).agg(['size','median','mean']))
+    elif pr1=='5':
+        print(tips.groupby(by='size' ,level=0).agg(['size','median','mean']))
+    elif pr1=='6':
+        print(tips.groupby(by='sex' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='smoker' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='day' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='time' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='size' ,level=0).agg(['size','median','mean']))
+
+    
+    
+
 
 if __name__ == '__main__':
-    main523()
+    main524()
