@@ -96,5 +96,12 @@ def main526():
         print('Opcion incorrecta')
         main526()
 
+def main527():
+    print('Para mi, las variables que mas afectan a cuanta propina dejan los clientes\n'
+            'son el sexo, el dia de la semana y el tamanio del grupo, ya que el sexo\n'
+            'porque los hombres suelen dejar mas propina que las mujeres, el dia de la\n'
+            'semana porque los fines de semana suelen dejar mas propina que los dias\n'
+            'de diario, y el tamanio del grupo , porque cuantos mas son mas propina \nsuelen dejar')
+
 if __name__ == '__main__':
-    main526()
+    main527()
