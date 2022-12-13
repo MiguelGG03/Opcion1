@@ -105,5 +105,9 @@ def main527():
             'suelen dejar. Los fumadores no afectan a la propina, ya que no dejan mas\n'
             'propina que los no fumadores.')
 
+def main528():
+    tips=pd.read_csv('data_clear/tips.csv')
+    
+
 if __name__ == '__main__':
     main526()
