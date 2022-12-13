@@ -107,7 +107,9 @@ def main527():
 
 def main528():
     tips=pd.read_csv('data_clear/tips.csv')
+    print('Tercer cuartil de tip: ',tips['tip'].quantile(0.75))
+
     
 
 if __name__ == '__main__':
-    main526()
+    main528()
