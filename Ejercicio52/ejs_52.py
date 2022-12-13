@@ -65,10 +65,12 @@ def main524():
     
 def main525():
     tips=pd.read_csv('data_clear/tips.csv')
-    
+    # Dibuja una gráfica que muestre para cada grupo de personas servidas en el restaurante, el promedio de las propinas pagadas
+    sns.barplot(data=tips, x='sex', y='tip')
+    plt.show()
     
 def main526():
     pass
 
 if __name__ == '__main__':
-    main524()
+    main525()
