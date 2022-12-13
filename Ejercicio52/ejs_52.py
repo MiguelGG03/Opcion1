@@ -65,7 +65,8 @@ def main525():
     tips=pd.read_csv('data_clear/tips.csv')
     print(tips.groupby(by='size').agg(['size','median','mean']))
     
-
+def main526():
+    pass
 
 if __name__ == '__main__':
     main524()
