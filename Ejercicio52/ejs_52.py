@@ -2,7 +2,7 @@ import pandas as pd
 
 def main521():
     tips = pd.read_csv('data_clear/tips.csv')
-    print(tips.describe())
+    print(tips.describe().T)
 
 def main522():
     tips = pd.read_csv('data_clear/tips.csv')
@@ -68,4 +68,4 @@ def main525():
 
 
 if __name__ == '__main__':
-    main524()
+    main521()
