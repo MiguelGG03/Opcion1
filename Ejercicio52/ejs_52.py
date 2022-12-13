@@ -19,7 +19,6 @@ def main522():
 
 def main523():
     tips = pd.read_csv('data_clear/tips.csv')
-    # Clacula qué porcentaje de los clientes que dan propina son hombres y qué porcentaje son mujeres
     print('Por lo que tengo entendido, estos datos han sido sacados')
     print('de un restaurante estadounidense, y por lo que tengo entendido,')
     print('en los restaurantes estadounidenses es obligatorio dejar de propina')
@@ -28,12 +27,13 @@ def main523():
     print('dejado propina, y por lo tanto, que el porcentaje de hombres y mujeres')
     print('que han dejado propina sera el porcentaje de hombres y mujeres que hay')
     print('en la muestra (dataset).')
-    # Media dehombres y mujeres de la muestra
     print('Hombres: ', tips['sex'][tips.sex=='Male'].count())
     print('Mujeres: ',tips['sex'][tips.sex=='Female'].count())
     print('Media hombres: ',(157/244)*100,'%')
     print('Media mujeres: ',(87/244)*100,'%')
 
+def main524():
+    pass
 
 if __name__ == '__main__':
     main523()
