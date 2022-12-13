@@ -63,7 +63,8 @@ def main524():
         main524()
     
 def main525():
-    pass
+    tips=pd.read_csv('data_clear/tips.csv')
+    print(tips.groupby(by='size' ,level=0).agg(['size','median','mean']))
     
 
 
