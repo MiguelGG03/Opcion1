@@ -17,6 +17,23 @@ def main522():
     print('Valores nulos en time: ', tips['time'].isna().sum())
     print('Valores nulos en size: ', tips['size'].isna().sum())
 
+def main523():
+    tips = pd.read_csv('data_clear/tips.csv')
+    # Clacula qué porcentaje de los clientes que dan propina son hombres y qué porcentaje son mujeres
+    print('Por lo que tengo entendido, estos datos han sido sacados')
+    print('de un restaurante estadounidense, y por lo que tengo entendido,')
+    print('en los restaurantes estadounidenses es obligatorio dejar de propina')
+    print('como minimo un 15 % o y incluso del 20 % del total de la cuenta,')
+    print('por lo que no es de extrañar que tanto hombres como mujeres hayan')
+    print('dejado propina, y por lo tanto, que el porcentaje de hombres y mujeres')
+    print('que han dejado propina sera el porcentaje de hombres y mujeres que hay')
+    print('en la muestra (dataset).')
+    # Media dehombres y mujeres de la muestra
+    print('Hombres: ', tips['sex'][tips.sex=='Male'].count())
+    print('Mujeres: ',tips['sex'][tips.sex=='Female'].count())
+    print('Media hombres: ',(157/244)*100,'%')
+    print('Media mujeres: ',(87/244)*100,'%')
+
 
 if __name__ == '__main__':
-    main522()
+    main523()
