@@ -62,6 +62,8 @@ def main524():
         print('Opcion incorrecta')
         main524()
     
+def main525():
+    pass
     
 
 
