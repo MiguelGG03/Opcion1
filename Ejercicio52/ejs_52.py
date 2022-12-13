@@ -110,6 +110,9 @@ def main528():
     print('Tercer cuartil de tip: ',tips['tip'].quantile(0.75))
     print(tips[tips['tip']>=tips['tip'].quantile(0.75)])
 
+def main529():
+    pass
+
     
 
 if __name__ == '__main__':
