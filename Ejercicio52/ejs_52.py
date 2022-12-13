@@ -70,8 +70,31 @@ def main525():
     
 def main526():
     tips=pd.read_csv('data_clear/tips.csv')
-    sns.heatmap(tips.corr(), annot=True)
-    plt.show()
+    pr1=input('Para que columna deseas verlo (con respecto de tip): \n'
+                '1 - sex \n'
+                '2 - smoker \n'
+                '3 - day \n'
+                '4 - time \n'
+                '5 - size \n'
+                '>>> ')
+    if pr1=='1':
+        sns.barplot(data=tips,x='sex',y='tip')
+        plt.show()
+    elif pr1=='2':
+        sns.barplot(data=tips,x='smoker',y='tip')
+        plt.show()
+    elif pr1=='3':
+        sns.barplot(data=tips,x='day',y='tip')
+        plt.show()
+    elif pr1=='4':
+        sns.barplot(data=tips,x='time',y='tip')
+        plt.show()
+    elif pr1=='5':
+        sns.barplot(data=tips,x='size',y='tip')
+        plt.show()
+    else:
+        print('Opcion incorrecta')
+        main526()
 
 if __name__ == '__main__':
     main526()
