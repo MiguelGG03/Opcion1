@@ -69,7 +69,9 @@ def main525():
     plt.show()
     
 def main526():
-    pass
+    tips=pd.read_csv('data_clear/tips.csv')
+    sns.heatmap(tips.corr(), annot=True)
+    plt.show()
 
 if __name__ == '__main__':
-    main525()
+    main526()
