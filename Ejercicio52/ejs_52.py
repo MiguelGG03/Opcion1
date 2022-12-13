@@ -39,7 +39,7 @@ def main524():
                 '3 - day \n'
                 '4 - time \n'
                 '5 - size \n'
-                '6 - todos \n'
+                '6 - todas \n'
                 '>>> ')
     if pr1=='1':
         print(tips.groupby(by='sex').agg(['size','median','mean']))
