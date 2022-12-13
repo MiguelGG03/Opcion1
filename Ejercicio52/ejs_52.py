@@ -42,30 +42,30 @@ def main524():
                 '6 - todos \n'
                 '>>> ')
     if pr1=='1':
-        print(tips.groupby(by='sex' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='sex').agg(['size','median','mean']))
     elif pr1=='2':
-        print(tips.groupby(by='smoker' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='smoker').agg(['size','median','mean']))
     elif pr1=='3':
-        print(tips.groupby(by='day' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='day').agg(['size','median','mean']))
     elif pr1=='4':
-        print(tips.groupby(by='time' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='time').agg(['size','median','mean']))
     elif pr1=='5':
-        print(tips.groupby(by='size' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='size').agg(['size','median','mean']))
     elif pr1=='6':
-        print(tips.groupby(by='sex' ,level=0).agg(['size','median','mean']))
-        print(tips.groupby(by='smoker' ,level=0).agg(['size','median','mean']))
-        print(tips.groupby(by='day' ,level=0).agg(['size','median','mean']))
-        print(tips.groupby(by='time' ,level=0).agg(['size','median','mean']))
-        print(tips.groupby(by='size' ,level=0).agg(['size','median','mean']))
+        print(tips.groupby(by='sex').agg(['size','median','mean']))
+        print(tips.groupby(by='smoker').agg(['size','median','mean']))
+        print(tips.groupby(by='day').agg(['size','median','mean']))
+        print(tips.groupby(by='time').agg(['size','median','mean']))
+        print(tips.groupby(by='size').agg(['size','median','mean']))
     else:
         print('Opcion incorrecta')
         main524()
     
 def main525():
     tips=pd.read_csv('data_clear/tips.csv')
-    print(tips.groupby(by='size' ,level=0).agg(['size','median','mean']))
+    print(tips.groupby(by='size').agg(['size','median','mean']))
     
 
 
 if __name__ == '__main__':
-    main521()
+    main524()
