@@ -2,8 +2,7 @@ import pandas as pd
 
 def main521():
     tips = pd.read_csv('data_clear/tips.csv')
-    print(tips.head())
-    print(tips.info())
+    print(tips.describe())
 
 def main522():
     tips = pd.read_csv('data_clear/tips.csv')
