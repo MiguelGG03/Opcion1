@@ -1,9 +1,12 @@
-import pyreadr
+import pyreadr as prd
 import pandas as pd
 
 
-data= pyreadr.read_r('data/tips.rda')
-for i in data:
-    print(i)
-    print(type(data[i]))
-    print(data[i].head(10))
+data= prd.read_r('data/tips.rda')
+
+tips = data['tips']
+print(tips.head())
+print(tips.info())
+print(type(tips))
+
+tips.to_csv('data_clear/tips.csv', index=False)
