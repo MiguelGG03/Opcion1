@@ -107,10 +107,10 @@ def main526():
 
 def main527():
     print('Para mi, las variables que mas afectan a cuanta propina dejan los clientes\n'
-            'son el sexo, el dia de la semana y el tamanio del grupo, ya que el sexo\n'
+            f'son el sexo, el dia de la semana y el tamaño del grupo, ya que el sexo\n'
             'porque los hombres suelen dejar mas propina que las mujeres, el dia de la\n'
             'semana porque los fines de semana suelen dejar mas propina que los dias\n'
-            'de diario, y el tamanio del grupo , porque cuantos mas son mas propina \n'
+            f'de diario, y el tamaño del grupo , porque cuantos mas son mas propina \n'
             'suelen dejar. Los fumadores no afectan a la propina, ya que no dejan mas\n'
             'propina que los no fumadores.')
 
@@ -156,7 +156,13 @@ def main529():
 def main5210():
     pass
     print('Yo creo que lo que el camarero debe hacer para organizar el restaurante es\n'
-            'organizar los camareros por dia de la semana, ya que los fines de semana\n')
+            'organizar los camareros por dia de la semana, ya que los fines de semana\n'
+            'suelen ser mas ocupados que los dias de diario, y asi poder tener mas\n'
+            'personal en los dias mas concurridos. \n'
+            f'Tambien creo que deberia organizar los camareros por tamaño del grupo,\n'
+            'ya que los grupos grandes suelen dar mas trabajo que los grupos pequeños.\n'
+            'Y por ultimo deberia organizar los camareros por sexo, ya que los hombres\n'
+            'suelen dejar mas propina que las mujeres.')
     
 
 if __name__ == '__main__':
