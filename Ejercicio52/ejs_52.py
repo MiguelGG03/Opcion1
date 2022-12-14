@@ -94,15 +94,15 @@ def main526():
         sns.barplot(data=tips,x='size',y='tip')
         plt.show()
     elif pr1=='6':
-        sns.barplot(data=tips,x='sex',sizes='tip')
+        sns.barplot(data=tips,x='sex',y='tip')
         plt.show()
-        sns.barplot(data=tips,x='smoker',sizes='tip')
+        sns.barplot(data=tips,x='smoker',y='tip')
         plt.show()
-        sns.barplot(data=tips,x='day',sizes='tip')
+        sns.barplot(data=tips,x='day',y='tip')
         plt.show()
-        sns.barplot(data=tips,x='time',sizes='tip')
+        sns.barplot(data=tips,x='time',y='tip')
         plt.show()
-        sns.barplot(data=tips,x='size',sizes='tip')
+        sns.barplot(data=tips,x='size',y='tip')
         plt.show()
         
     else:
