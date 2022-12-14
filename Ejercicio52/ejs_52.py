@@ -142,13 +142,11 @@ def main529():
         sns.histplot(data=data,x='size')
         plt.show()
     elif pr1=='5':
-        sns.histplot(data=data,x='smoker')
-        plt.show()
-        sns.histplot(data=data,x='day')
-        plt.show()
-        sns.histplot(data=data,x='time')
-        plt.show()
-        sns.histplot(data=data,x='size')
+        fig, axes = plt.subplots(2, 2, figsize=(12, 8))
+        sns.histplot(data=data, x='smoker', ax=axes[0,0])
+        sns.histplot(data=data, x='day', ax=axes[0,1])
+        sns.histplot(data=data, x='time', ax=axes[1,0])
+        sns.histplot(data=data, x='size', ax=axes[1,1])
         plt.show()
     else:
         print('Opcion incorrecta')
