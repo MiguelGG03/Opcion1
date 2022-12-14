@@ -1,0 +1,4 @@
+pandas==1.4.2
+pyreadr==0.4.7
+matplotlib==3.5.1
+seabron==0.11.2
