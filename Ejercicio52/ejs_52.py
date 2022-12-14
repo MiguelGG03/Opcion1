@@ -85,7 +85,7 @@ def main526():
         sns.barplot(data=tips,x='smoker',y='tip')
         plt.show()
     elif pr1=='3':
-        sns.barplot(data=tips,x='day',y='tip')
+        sns.barplot(data=tips,x='day',y='tip',hue_order=['Thur','Fri','Sat','Sun'])
         plt.show()
     elif pr1=='4':
         sns.barplot(data=tips,x='time',y='tip')
@@ -97,7 +97,7 @@ def main526():
         fig, axes = plt.subplots(2, 3, figsize=(12, 8))
         sns.barplot(data=tips, x='sex',y='tip', ax=axes[0,0])
         sns.barplot(data=tips, x='smoker',y='tip', ax=axes[0,1])
-        sns.barplot(data=tips, x='day',y='tip', ax=axes[0,2])
+        sns.barplot(data=tips, x='day',y='tip', ax=axes[0,2],hue_order=['Thur','Fri','Sat','Sun'])
         sns.barplot(data=tips, x='time',y='tip', ax=axes[1,0])
         sns.barplot(data=tips, x='size',y='tip', ax=axes[1,1])
         plt.show()
@@ -133,7 +133,7 @@ def main529():
         sns.histplot(data=data,x='smoker')
         plt.show()
     elif pr1=='2':
-        sns.histplot(data=data,x='day')
+        sns.histplot(data=data,x='day',hue_order=['Thur','Fri','Sat','Sun'])
         plt.show()
     elif pr1=='3':
         sns.histplot(data=data,x='time')
@@ -144,7 +144,7 @@ def main529():
     elif pr1=='5':
         fig, axes = plt.subplots(2, 2, figsize=(12, 8))
         sns.histplot(data=data, x='smoker', ax=axes[0,0])
-        sns.histplot(data=data, x='day', ax=axes[0,1])
+        sns.histplot(data=data, x='day', ax=axes[0,1],hue_order=['Thur','Fri','Sat','Sun'])
         sns.histplot(data=data, x='time', ax=axes[1,0])
         sns.histplot(data=data, x='size', ax=axes[1,1])
         plt.show()
@@ -160,4 +160,4 @@ def main5210():
     
 
 if __name__ == '__main__':
-    main526()
+    main529()
