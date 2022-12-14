@@ -94,7 +94,6 @@ def main526():
         sns.barplot(data=tips,x='size',y='tip')
         plt.show()
     elif pr1=='6':
-        # Meter los cinco graficos en una unica ventana
         fig, axes = plt.subplots(2, 3, figsize=(12, 8))
         sns.barplot(data=tips, x='sex',y='tip', ax=axes[0,0])
         sns.barplot(data=tips, x='smoker',y='tip', ax=axes[0,1])
