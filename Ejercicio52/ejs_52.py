@@ -131,6 +131,7 @@ def main529():
                 '2 - day \n'
                 '3 - time \n'
                 '4 - size \n'
+                '5 - todas \n'
                 '>>> ')
     if pr1=='1':
         sns.histplot(data=data,x='smoker')
@@ -142,6 +143,15 @@ def main529():
         sns.histplot(data=data,x='time')
         plt.show()
     elif pr1=='4':
+        sns.histplot(data=data,x='size')
+        plt.show()
+    elif pr1=='5':
+        sns.histplot(data=data,x='smoker')
+        plt.show()
+        sns.histplot(data=data,x='day')
+        plt.show()
+        sns.histplot(data=data,x='time')
+        plt.show()
         sns.histplot(data=data,x='size')
         plt.show()
     else:
