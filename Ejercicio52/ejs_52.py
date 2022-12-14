@@ -102,20 +102,6 @@ def main526():
         sns.barplot(data=tips, x='time',y='tip', ax=axes[1,0])
         sns.barplot(data=tips, x='size',y='tip', ax=axes[1,1])
         plt.show()
-
-        '''
-        sns.barplot(data=tips,x='sex',y='tip')
-        plt.show()
-        sns.barplot(data=tips,x='smoker',y='tip')
-        plt.show()
-        sns.barplot(data=tips,x='day',y='tip')
-        plt.show()
-        sns.barplot(data=tips,x='time',y='tip')
-        plt.show()
-        sns.barplot(data=tips,x='size',y='tip')
-        plt.show()
-        '''
-        
     else:
         print('Opcion incorrecta')
         main526()
