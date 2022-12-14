@@ -76,6 +76,7 @@ def main526():
                 '3 - day \n'
                 '4 - time \n'
                 '5 - size \n'
+                '6 - todas \n'
                 '>>> ')
     if pr1=='1':
         sns.barplot(data=tips,x='sex',y='tip')
@@ -92,6 +93,14 @@ def main526():
     elif pr1=='5':
         sns.barplot(data=tips,x='size',y='tip')
         plt.show()
+    elif pr1=='6':
+        sns.barplot(data=tips,x='sex',sizes='tip')
+        sns.barplot(data=tips,x='smoker',sizes='tip')
+        sns.barplot(data=tips,x='day',sizes='tip')
+        sns.barplot(data=tips,x='time',sizes='tip')
+        sns.barplot(data=tips,x='size',sizes='tip')
+        plt.show()
+        
     else:
         print('Opcion incorrecta')
         main526()
