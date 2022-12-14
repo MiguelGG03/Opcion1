@@ -155,11 +155,11 @@ def main529():
 
 def main5210():
     pass
-    print('Yo creo que lo que el camarero debe hacer para organizar el restaurante es\n'
-            'organizar los camareros por dia de la semana, ya que los fines de semana\n'
+    print('Yo creo que lo que debe hacer para organizar el restaurante es\n'
+            'organizarlos por dia de la semana, ya que los fines de semana\n'
             'suelen ser mas ocupados que los dias de diario, y asi poder tener mas\n'
             'personal en los dias mas concurridos. \n'
-            f'Tambien creo que deberia organizar los camareros por tamaño del grupo,\n'
+            f'Tambien creo que deberia organizar a los camareros por tamaño del grupo,\n'
             'ya que los grupos grandes suelen dar mas trabajo que los grupos pequeños.\n'
             'Y por ultimo deberia organizar los camareros por sexo, ya que los hombres\n'
             'suelen dejar mas propina que las mujeres.')
